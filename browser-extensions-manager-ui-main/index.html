@@ -1,63 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <!-- displays site properly based on user's device -->
-<link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Browser extensions manager UI</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <header class="space">
-    <img src="./assets/images/logo.svg" alt="logo">
+    <title>Frontend Mentor | Browser extensions manager UI</title>
 
-    <button  onclick="changeImage()"><img src="assets/images/icon-sun.svg" id="buttonImage"></button>
-  </header>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="space">
+      <img src="./assets/images/logo.svg" alt="logo" />
 
-<div class="filters space">
-  <h1>Extensions List</h1>
-  <div>
-    <button id="all-btn" onclick="showAll()">All</button>
-    <button id="active-btn" onclick="showActive()">Active</button>
-    <button id="inactive-btn" onclick="showInactive()">Inactive</button>
-  </div>
-</div>
+      <button onclick="changeImage()">
+        <img src="assets/images/icon-sun.svg" id="buttonImage" />
+      </button>
+    </header>
 
-<div class="grid-cols-3">
-  <div class="extension-card ">
-    <div class="description gap-1">
-      <img src="./assets/images/logo-devlens.svg" alt="logo-devlens">
-      <div class="description-text">
-        <h2> DevLens</h2>
-        <p> Quickly inspect page layouts and visualize element boundaries.Q</p>
-      </div>
-      </div>
-      <div class="extension-inputs space">
-        <button>  Remove</button>
-        <label class="switch">
-          <input type="checkbox" class="toggle-switch">
-          <span class="slider round"></span>
-        </label>
-      
+    <div class="filters space">
+      <h1>Extensions List</h1>
+      <div>
+        <button
+          id="all-btn"
+          class="filter-btn active"
+          data-filter="all"
+          onclick="filterExtensions('all')"
+        >
+          All
+        </button>
+        <button
+          id="active-btn"
+          class="filter-btn"
+          data-filter="active"
+          onclick="filterExtensions('active')"
+        >
+          Active
+        </button>
+        <button
+          id="inactive-btn"
+          class="filter-btn"
+          data-filter="inactive"
+          onclick="filterExtensions('inactive')"
+        >
+          Inactive
+        </button>
       </div>
     </div>
-  </div>
 
+    <div class="grid-cols-3" id="dynamicContent">
+      <!-- Dynamic Contents will go here babe ❤️❤️ -->
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Gabrielle</a>.
+    </div>
 
-  <script src="./script.js"></script>
-  <script src="./exten.js"></script>
-</body>
+    <script src="./script.js"></script>
+    <!-- <script src="./exten.js"></script> Splitting your JavaScript it not neccessary Babe -->
+  </body>
 </html>
+
+<!-- I've fixed yout code for you, don't forget my Selfie tomorrow ❤️❤️😘😘💋 -->
+<!-- And I also fixed your theme changing  -->
